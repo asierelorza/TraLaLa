@@ -8,9 +8,9 @@ public class Usuario {
 	private String usuario_paypal;
 	private String contrasenya_paypal;
 	private int numTarjCred;
-	private ArrayList<Cancion> listaReproduccion = new ArrayList<Cancion>();
-	private ArrayList<Reproduccion> historialRep = new ArrayList<Reproduccion>();
-	private ArrayList<Usuario> listaAmigos = new ArrayList<Usuario>();
+	private ArrayList<Cancion> listaReproduccion = new ArrayList<Cancion>(); // Lista de reproduccion de canciones de cada usuario. Solo puede tener una lista de rep.
+	private ArrayList<Reproduccion> historialRep = new ArrayList<Reproduccion>(); // Historial de reproduccion de cada usuario
+	private ArrayList<Usuario> listaAmigos = new ArrayList<Usuario>(); // Lista de amigos de cada usuario
 	
 	public Usuario(String nombreUsu, String usuario_paypal, String contrasenya_paypal, int numTarjCred){
 		this.nombreUsu = nombreUsu;
@@ -79,8 +79,16 @@ public class Usuario {
 		this.listaAmigos = listaAmigos;
 	}
 	
-	public void añadirCancionALista(Cancion cancion){
+	public void anyadirCancionALista(Cancion cancion){
 		this.listaReproduccion.add(cancion);
+	}
+	
+	public void anyadirAmigo(Usuario usuario){
+		this.listaAmigos.add(usuario);
+	}
+	
+	public void anyadirRepAUsuario(Reproduccion rep){
+		this.historialRep.add(rep);
 	}
 	
 

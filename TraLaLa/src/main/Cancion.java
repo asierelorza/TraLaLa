@@ -6,6 +6,16 @@ public class Cancion {
 	
 	private String titulo;
 	private int id_cancion; // Clave primaria
+	private String album;
+	private ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>(); // Guardara cuantas veces aparece cada cancion en una lista de reproduccion de cada usuario
+	private ArrayList<Reproduccion> listaReproduccion = new ArrayList<Reproduccion>(); // Guardara las reproducciones que se han dado de cada cancion
+	
+	public Cancion(String titulo, int id_cancion, String album){
+		this.titulo = titulo;
+		this.id_cancion = id_cancion;
+		this.album = album;
+	}
+	
 	public ArrayList<Usuario> getListaUsuario() {
 		return listaUsuario;
 	}
@@ -20,16 +30,6 @@ public class Cancion {
 
 	public void setListaReproduccion(ArrayList<Reproduccion> listaReproduccion) {
 		this.listaReproduccion = listaReproduccion;
-	}
-
-	private String album;
-	private ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>();
-	private ArrayList<Reproduccion> listaReproduccion = new ArrayList<Reproduccion>();
-	
-	public Cancion(String titulo, int id_cancion, String album){
-		this.titulo = titulo;
-		this.id_cancion = id_cancion;
-		this.album = album;
 	}
 
 	public String getTitulo() {
@@ -60,10 +60,8 @@ public class Cancion {
 		return this.listaReproduccion.size();
 	}
 	
-	public void ReproducirCancion(int fecha_rep, int hora_rep){
-		this.listaReproduccion.add(new Reproduccion(fecha_rep, hora_rep));
+	public void anyadirRepACancion(Reproduccion rep){
+		this.listaReproduccion.add(rep);
 	}
-	
-	
 
 }
