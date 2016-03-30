@@ -7,13 +7,15 @@ public class Cancion {
 	private String titulo;
 	private int id_cancion; // Clave primaria
 	private String album;
+	private int precio; // Precio que se debe pagar por canción, necesario para el desarrollo de los algoritmos de pago. 
 	private ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>(); // Guardara cuantas veces aparece cada cancion en una lista de reproduccion de cada usuario
 	private ArrayList<Reproduccion> listaReproduccion = new ArrayList<Reproduccion>(); // Guardara las reproducciones que se han dado de cada cancion
 	
-	public Cancion(String titulo, int id_cancion, String album){
+	public Cancion(String titulo, int id_cancion, String album, int precio){
 		this.titulo = titulo;
 		this.id_cancion = id_cancion;
 		this.album = album;
+		this.precio= precio;
 	}
 	
 	public ArrayList<Usuario> getListaUsuario() {
@@ -54,6 +56,14 @@ public class Cancion {
 
 	public void setAlbum(String album) {
 		this.album = album;
+	}
+	
+	public int getPrecio(){
+		return precio;
+	}
+	
+	public void setPrecio(int precio){
+		this.precio=precio;
 	}
 	
 	public int getReproduccionesCancion(){
