@@ -1,7 +1,5 @@
 package main;
 
-import java.util.ArrayList;
-
 public abstract class Pago {
 
 	protected int pago;

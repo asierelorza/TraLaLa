@@ -2,18 +2,29 @@ package main;
 
 import java.util.ArrayList;
 
+import javax.jdo.annotations.Join;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Usuario {
 	
-
-	
+	@PrimaryKey
 	private String nombreUsu; // Clave primaria
+	
 	private String usuario_paypal;
 	private String contrasenya_paypal;
 	private int numTarjCred;
-	boolean ventajoso; //Para saber si para un usuario en concreto el método de pago es uno u otro. 
-	int importeMensual; //Puede que para todos los usuarios el importe mensual no sea el mismo. 
+	private boolean ventajoso; //Para saber si para un usuario en concreto el método de pago es uno u otro. 
+	private int importeMensual; //Puede que para todos los usuarios el importe mensual no sea el mismo.
+	
+	@Join
 	private ArrayList<Cancion> listaReproduccion = new ArrayList<Cancion>(); // Lista de reproduccion de canciones de cada usuario. Solo puede tener una lista de rep.
+	
+	@Join
 	private ArrayList<Reproduccion> historialRep = new ArrayList<Reproduccion>(); // Historial de reproduccion de cada usuario
+	
+	@Join
 	private ArrayList<Usuario> listaAmigos = new ArrayList<Usuario>(); // Lista de amigos de cada usuario
 	
 	public Usuario(String nombreUsu, String usuario_paypal, String contrasenya_paypal, int numTarjCred, boolean ventajoso){

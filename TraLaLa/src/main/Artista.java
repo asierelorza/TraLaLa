@@ -2,9 +2,15 @@ package main;
 
 import java.util.ArrayList;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Artista {
 	
+	@PrimaryKey
 	private int id_artista; // Clave primaria
+	
 	private String nomArtista;
 	private ArrayList<Cancion> listaCanciones = new ArrayList<Cancion>();
 	

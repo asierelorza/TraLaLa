@@ -2,22 +2,44 @@ package main;
 
 import java.util.ArrayList;
 
+import javax.jdo.annotations.Join;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Cancion {
 	
-	private String titulo;
+	@PrimaryKey
 	private int id_cancion; // Clave primaria
+	
+	private String titulo;
 	private String album;
-	private int precio; // Precio que se debe pagar por canción, necesario para el desarrollo de los algoritmos de pago. 
+	private int precio; // Precio que se debe pagar por canción, necesario para el desarrollo de los algoritmos de pago.
+	
+	@Join
 	private ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>(); // Guardara cuantas veces aparece cada cancion en una lista de reproduccion de cada usuario
+	
+	@Join
 	private ArrayList<Reproduccion> listaReproduccion = new ArrayList<Reproduccion>(); // Guardara las reproducciones que se han dado de cada cancion
 	
-	public Cancion(String titulo, int id_cancion, String album, int precio){
+	private Artista artista;
+	
+	public Cancion(String titulo, int id_cancion, String album, int precio, Artista artista){
 		this.titulo = titulo;
 		this.id_cancion = id_cancion;
 		this.album = album;
 		this.precio= precio;
+		this.artista = artista;
 	}
 	
+	public Artista getArtista() {
+		return artista;
+	}
+
+	public void setArtista(Artista artista) {
+		this.artista = artista;
+	}
+
 	public ArrayList<Usuario> getListaUsuario() {
 		return listaUsuario;
 	}

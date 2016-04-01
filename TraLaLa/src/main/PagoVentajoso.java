@@ -21,7 +21,7 @@ public class PagoVentajoso extends Pago{
 		
 		for(int i = 0; i<listaReproduccion.size();i++){
 			if(listaReproduccion.get(i).getFecha_rep()== mes){
-				id_cancion = listaReproduccion.get(i).getId_cancion();
+				id_cancion = listaReproduccion.get(i).getCancion().getId_cancion();
 				for(int j = 0; j<listaCancion.size();j++){
 					if(id_cancion==listaCancion.get(j).getId_cancion()){
 						pago= pago+listaCancion.get(j).getPrecio();

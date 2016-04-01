@@ -1,35 +1,38 @@
 package main;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
 public class Reproduccion { // Una reproduccion se creara en el main, y luego se guardara como historial tanto en cancion como en usuario
-	
+	// Cual es la clave primaria?
 	private int fecha_rep;
 	private int hora_rep;
-	private int id_cancion;
-	private String nombreUsu;
+	private Usuario usuario;
+	private Cancion cancion;
 	private int precio;
 	
-	public Reproduccion(int fecha_rep, int hora_rep, int id_cancion, String nombreUsu){
+	public Reproduccion(int fecha_rep, int hora_rep, Usuario usuario, Cancion cancion){
 		this.fecha_rep = fecha_rep;
 		this.hora_rep = hora_rep;
-		this.id_cancion = id_cancion;
-		this.nombreUsu = nombreUsu;
-		
+		this.usuario = usuario;
+		this.cancion = cancion;
+	
 	}
 
-	public int getId_cancion() {
-		return id_cancion;
+	public Usuario getUsuario() {
+		return usuario;
 	}
 
-	public void setId_cancion(int id_cancion) {
-		this.id_cancion = id_cancion;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
-	public String getNombreUsu() {
-		return nombreUsu;
+	public Cancion getCancion() {
+		return cancion;
 	}
 
-	public void setNombreUsu(String nombreUsu) {
-		this.nombreUsu = nombreUsu;
+	public void setCancion(Cancion cancion) {
+		this.cancion = cancion;
 	}
 
 	public int getFecha_rep() {
