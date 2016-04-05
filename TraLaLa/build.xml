@@ -73,7 +73,7 @@
 
     <!-- TARGET : Run -->	
 	<target name="run">
-        <java classname="es.deusto.ingenieria.sd.jdo.accounts.Main" classpathref="classpath" fork="true">
+        <java classname="main.Main" classpathref="classpath" fork="true">
         	<jvmarg value="-Dlog4j.configuration=log4j.properties"/>
 		</java>
     </target>
