@@ -4287,3 +4287,614 @@ java.sql.SQLException: Access denied for user 'sd'@'localhost' (using password: 
 05 abr 2016 - 15:46:00,343 (main) DEBUG [DataNucleus.Connection] - Cerrando pool de connecciones tx
 05 abr 2016 - 15:46:00,343 (main) DEBUG [DataNucleus.Connection] - Cerrando pool de connecciones nontx
 05 abr 2016 - 15:46:00,343 (main) DEBUG [DataNucleus.Persistence] - Desmanejando la persistencia de todas las clases
+05 abr 2016 - 15:57:21,148 (main) DEBUG [DataNucleus.General] - Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+05 abr 2016 - 15:57:21,164 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.api.jdo version 4.0.0.m4 at URL file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-api-jdo-4.0.0-m4.jar.
+05 abr 2016 - 15:57:21,174 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-api-jdo-4.0.0-m4.jar!/plugin.xml.
+05 abr 2016 - 15:57:21,176 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-api-jdo-4.0.0-m4.jar!/plugin.xml.
+05 abr 2016 - 15:57:21,178 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus version 4.0.0.m4 at URL file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-core-4.0.0-m4.jar.
+05 abr 2016 - 15:57:21,187 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-core-4.0.0-m4.jar!/plugin.xml.
+05 abr 2016 - 15:57:21,193 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-core-4.0.0-m4.jar!/plugin.xml.
+05 abr 2016 - 15:57:21,196 (main) DEBUG [DataNucleus.General] - Registering bundle org.datanucleus.store.rdbms version 4.0.0.m4 at URL file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-rdbms-4.0.0-m4.jar.
+05 abr 2016 - 15:57:21,207 (main) DEBUG [DataNucleus.General] - Loading extension points from plug-in file jar:file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-rdbms-4.0.0-m4.jar!/plugin.xml.
+05 abr 2016 - 15:57:21,214 (main) DEBUG [DataNucleus.General] - Loading extensions from plug-in file jar:file:/C:/Users/axi_e/git/TraLaLa/TraLaLa/lib/datanucleus-rdbms-4.0.0-m4.jar!/plugin.xml.
+05 abr 2016 - 15:57:21,236 (main) DEBUG [DataNucleus.Persistence] - Tipos de Java inicializando ...
+05 abr 2016 - 15:57:21,262 (main) DEBUG [DataNucleus.Persistence] - Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+05 abr 2016 - 15:57:21,262 (main) DEBUG [DataNucleus.Persistence] - Inicializando TypeConverters ...
+05 abr 2016 - 15:57:21,276 (main) DEBUG [DataNucleus.Persistence] - TypeConverters listo
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.awt.Color to : java.lang.String,int[]
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.io.Serializable to : byte[],java.nio.ByteBuffer,java.lang.String
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
+05 abr 2016 - 15:57:21,277 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Character to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Class to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Integer to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.Long to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigDecimal to : java.lang.Double,java.nio.ByteBuffer,java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.math.BigInteger to : java.lang.Long,java.nio.ByteBuffer,java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URI to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.net.URL to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Date to : java.lang.Long,java.util.Date,java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Time to : java.lang.Long,java.util.Date,java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.sql.Timestamp to : java.lang.Long,java.util.Date,java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.BitSet to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Calendar to : [Ljava.lang.Object;,java.util.Date,java.lang.String,java.sql.Timestamp
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Currency to : java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Date to : java.lang.Long,java.lang.String
+05 abr 2016 - 15:57:21,278 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.Locale to : java.lang.String
+05 abr 2016 - 15:57:21,279 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+05 abr 2016 - 15:57:21,279 (main) DEBUG [DataNucleus.Persistence] - TypeConverter(s) available for java.util.UUID to : java.lang.String
+05 abr 2016 - 15:57:21,280 (main) DEBUG [DataNucleus.MetaData] - MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+05 abr 2016 - 15:57:21,281 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 4.0.0.m4) para el API "JDO" utilisando el JRE "{2}"
+05 abr 2016 - 15:57:21,281 (main) DEBUG [DataNucleus.Enhancer] - DataNucleus Enhancer : Classpath
+05 abr 2016 - 15:57:21,281 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\lib\datanucleus-api-jdo-4.0.0-m4.jar
+05 abr 2016 - 15:57:21,281 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\lib\datanucleus-core-4.0.0-m4.jar
+05 abr 2016 - 15:57:21,281 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\lib\datanucleus-rdbms-4.0.0-m4.jar
+05 abr 2016 - 15:57:21,281 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\lib\jdo-api-3.1-rc1.jar
+05 abr 2016 - 15:57:21,281 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\lib\log4j-1.2.17.jar
+05 abr 2016 - 15:57:21,282 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\lib\mysql-connector-java-5.1.28.jar
+05 abr 2016 - 15:57:21,282 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\bin
+05 abr 2016 - 15:57:21,282 (main) DEBUG [DataNucleus.Enhancer] - >>  C:\Users\axi_e\git\TraLaLa\TraLaLa\resources
+05 abr 2016 - 15:57:21,282 (main) DEBUG [DataNucleus.Enhancer] - Enhancing classes
+05 abr 2016 - 15:57:21,315 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata de las clases "[main.Artista, main.Cancion, main.Pago, main.PagoConvencional, main.PagoVentajoso, main.Reproduccion, main.Usuario]" ...
+05 abr 2016 - 15:57:21,354 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Artista" tiene anotaciones de JDO y vamos a usarlas.
+05 abr 2016 - 15:57:21,359 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" tiene anotaciones de JDO y vamos a usarlas.
+05 abr 2016 - 15:57:21,364 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.Pago" en /META-INF/package.jdo
+05 abr 2016 - 15:57:21,365 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.Pago" en /WEB-INF/package.jdo
+05 abr 2016 - 15:57:21,365 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.Pago" en /package.jdo
+05 abr 2016 - 15:57:21,365 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.Pago" en /main/package.jdo
+05 abr 2016 - 15:57:21,365 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.Pago" en /main.jdo
+05 abr 2016 - 15:57:21,366 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.Pago" en /main/Pago.jdo
+05 abr 2016 - 15:57:21,366 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "main.Pago"
+05 abr 2016 - 15:57:21,366 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "main.Pago" no tener Meta-Data
+05 abr 2016 - 15:57:21,366 (main) DEBUG [DataNucleus.MetaData] - La clase "main.Pago" no tiene MetaData o annotaciones.
+05 abr 2016 - 15:57:21,366 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoConvencional" en /META-INF/package.jdo
+05 abr 2016 - 15:57:21,366 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoConvencional" en /WEB-INF/package.jdo
+05 abr 2016 - 15:57:21,367 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoConvencional" en /package.jdo
+05 abr 2016 - 15:57:21,367 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoConvencional" en /main/package.jdo
+05 abr 2016 - 15:57:21,367 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoConvencional" en /main.jdo
+05 abr 2016 - 15:57:21,367 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoConvencional" en /main/PagoConvencional.jdo
+05 abr 2016 - 15:57:21,367 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "main.PagoConvencional"
+05 abr 2016 - 15:57:21,367 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "main.PagoConvencional" no tener Meta-Data
+05 abr 2016 - 15:57:21,368 (main) DEBUG [DataNucleus.MetaData] - La clase "main.PagoConvencional" no tiene MetaData o annotaciones.
+05 abr 2016 - 15:57:21,368 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoVentajoso" en /META-INF/package.jdo
+05 abr 2016 - 15:57:21,368 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoVentajoso" en /WEB-INF/package.jdo
+05 abr 2016 - 15:57:21,368 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoVentajoso" en /package.jdo
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoVentajoso" en /main/package.jdo
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoVentajoso" en /main.jdo
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - No encontramos el MetaData del tipo "jdo" por la clase "main.PagoVentajoso" en /main/PagoVentajoso.jdo
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - No hemos encontrado el MetaData del tipo "jdo" por la clase "main.PagoVentajoso"
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - Registrando la clase "main.PagoVentajoso" no tener Meta-Data
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - La clase "main.PagoVentajoso" no tiene MetaData o annotaciones.
+05 abr 2016 - 15:57:21,369 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" tiene anotaciones de JDO y vamos a usarlas.
+05 abr 2016 - 15:57:21,370 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" tiene anotaciones de JDO y vamos a usarlas.
+05 abr 2016 - 15:57:21,370 (main) DEBUG [DataNucleus.MetaData] - Populación del MetaData ...
+05 abr 2016 - 15:57:21,371 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Artista" : Populando Meta-Data
+05 abr 2016 - 15:57:21,371 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Artista" campo "nomArtista" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,371 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Artista" campo "listaCanciones" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" : Populando Meta-Data
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" campo "titulo" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" campo "album" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" campo "precio" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" campo "artista" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" : Populando Meta-Data
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" campo "fecha_rep" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" campo "hora_rep" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" campo "usuario" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,373 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" campo "cancion" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" campo "precio" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" : Populando Meta-Data
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" campo "usuario_paypal" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" campo "contrasenya_paypal" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" campo "numTarjCred" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" campo "ventajoso" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" campo "importeMensual" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+05 abr 2016 - 15:57:21,374 (main) DEBUG [DataNucleus.MetaData] - Inicialisación del MetaData ...
+05 abr 2016 - 15:57:21,375 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Artista" : Inicializando Meta-Data
+05 abr 2016 - 15:57:21,376 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Cancion" : Inicializando Meta-Data
+05 abr 2016 - 15:57:21,376 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Reproduccion" : Inicializando Meta-Data
+05 abr 2016 - 15:57:21,376 (main) DEBUG [DataNucleus.MetaData] - Clase "main.Usuario" : Inicializando Meta-Data
+05 abr 2016 - 15:57:21,377 (main) DEBUG [DataNucleus.MetaData] - MetaData Management : Carga de Metadata ya ha terminado
+05 abr 2016 - 15:57:21,379 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Artista" empezando ...
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no implementa el interfaz "org.datanucleus.enhancer.Persistable"!
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnFlags" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnFieldTypes" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnFieldNames" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnFieldFlags" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnReplaceField" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnIsTransactional" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,391 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnSuperClone" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnProvideFields" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "___dn$loadClass" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnIsDirty" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnReplaceFlags" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnIsDetached" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnMakeDirty" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnIsDeleted" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnProvideField" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnPreSerialize" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnGetObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnGetVersion" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnIsNew" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnCopyField" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,392 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnCopyFields" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnIsPersistent" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "dnReplaceFields" pero lo necesita
+05 abr 2016 - 15:57:21,393 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Artista" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+05 abr 2016 - 15:57:21,398 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: org.datanucleus.enhancer.Persistable
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.<init> : ignorando enhance de set del campo "main.Artista.listaCanciones"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.<init> : ignorando enhance de set del campo "main.Artista.id_artista"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.<init> : ignorando enhance de set del campo "main.Artista.nomArtista"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.getId_artista, cambiando el uso del campo "main.Artista.id_artista" para utilisar "dnGetid_artista()"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.setId_artista, cambiando el uso del campo "main.Artista.id_artista" para utilisar "dnSetid_artista()"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.getNomArtista, cambiando el uso del campo "main.Artista.nomArtista" para utilisar "dnGetnomArtista()"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.setNomArtista, cambiando el uso del campo "main.Artista.nomArtista" para utilisar "dnSetnomArtista()"
+05 abr 2016 - 15:57:21,401 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.getListaCanciones, cambiando el uso del campo "main.Artista.listaCanciones" para utilisar "dnGetlistaCanciones()"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Artista.setListaCanciones, cambiando el uso del campo "main.Artista.listaCanciones" para utilisar "dnSetlistaCanciones()"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "org.datanucleus.state.StateManager dnStateManager"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte dnFlags"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B dnFieldFlags"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class dnPersistableSuperclass"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; dnFieldNames"
+05 abr 2016 - 15:57:21,402 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int dnInheritedFieldCount"
+05 abr 2016 - 15:57:21,403 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+05 abr 2016 - 15:57:21,403 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "main.Artista()"
+05 abr 2016 - 15:57:21,404 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,404 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,404 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,404 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,404 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetObjectId()"
+05 abr 2016 - 15:57:21,404 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetVersion()"
+05 abr 2016 - 15:57:21,405 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnPreSerialize()"
+05 abr 2016 - 15:57:21,405 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.ExecutionContext dnGetExecutionContext()"
+05 abr 2016 - 15:57:21,405 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+05 abr 2016 - 15:57:21,405 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDeleted()"
+05 abr 2016 - 15:57:21,405 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDirty()"
+05 abr 2016 - 15:57:21,405 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsNew()"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsPersistent()"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsTransactional()"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnMakeDirty(class java.lang.String fieldName)"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance(class java.lang.Object key)"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideFields(class [I indices)"
+05 abr 2016 - 15:57:21,406 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFields(class [I indices)"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFlags()"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceStateManager(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDetached()"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm, class java.lang.Object obj)"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceField(int index)"
+05 abr 2016 - 15:57:21,407 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideField(int index)"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyField(class main.Artista obj, int index)"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyFields(class java.lang.Object obj, class [I indices)"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __dnFieldFlagsInit()"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __dnGetInheritedFieldCount()"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetManagedFieldCount()"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+05 abr 2016 - 15:57:21,408 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___dn$loadClass(class java.lang.String className)"
+05 abr 2016 - 15:57:21,409 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnSuperClone()"
+05 abr 2016 - 15:57:21,409 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetid_artista(class main.Artista objPC)"
+05 abr 2016 - 15:57:21,409 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetid_artista(class main.Artista objPC, int val)"
+05 abr 2016 - 15:57:21,409 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList dnGetlistaCanciones(class main.Artista objPC)"
+05 abr 2016 - 15:57:21,409 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetlistaCanciones(class main.Artista objPC, class java.util.ArrayList val)"
+05 abr 2016 - 15:57:21,410 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetnomArtista(class main.Artista objPC)"
+05 abr 2016 - 15:57:21,410 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetnomArtista(class main.Artista objPC, class java.lang.String val)"
+05 abr 2016 - 15:57:21,410 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\axi_e\git\TraLaLa\TraLaLa\bin\main\Artista.class" con definicion enhanced
+05 abr 2016 - 15:57:21,411 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Artista" ha terminado
+05 abr 2016 - 15:57:21,411 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Cancion" empezando ...
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no implementa el interfaz "org.datanucleus.enhancer.Persistable"!
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnFlags" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnFieldTypes" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnFieldNames" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnFieldFlags" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnReplaceField" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnIsTransactional" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnSuperClone" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnProvideFields" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "___dn$loadClass" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnIsDirty" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnReplaceFlags" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnIsDetached" pero lo necesita
+05 abr 2016 - 15:57:21,412 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnMakeDirty" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnIsDeleted" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnProvideField" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnPreSerialize" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnGetObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnGetVersion" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnIsNew" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnCopyField" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnCopyFields" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,413 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,414 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,414 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnIsPersistent" pero lo necesita
+05 abr 2016 - 15:57:21,414 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "dnReplaceFields" pero lo necesita
+05 abr 2016 - 15:57:21,414 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Cancion" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+05 abr 2016 - 15:57:21,414 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: org.datanucleus.enhancer.Persistable
+05 abr 2016 - 15:57:21,414 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.listaUsuario"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.listaReproduccion"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.titulo"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.id_cancion"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.album"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.precio"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.<init> : ignorando enhance de set del campo "main.Cancion.artista"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getArtista, cambiando el uso del campo "main.Cancion.artista" para utilisar "dnGetartista()"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setArtista, cambiando el uso del campo "main.Cancion.artista" para utilisar "dnSetartista()"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getListaUsuario, cambiando el uso del campo "main.Cancion.listaUsuario" para utilisar "dnGetlistaUsuario()"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setListaUsuario, cambiando el uso del campo "main.Cancion.listaUsuario" para utilisar "dnSetlistaUsuario()"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getListaReproduccion, cambiando el uso del campo "main.Cancion.listaReproduccion" para utilisar "dnGetlistaReproduccion()"
+05 abr 2016 - 15:57:21,415 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setListaReproduccion, cambiando el uso del campo "main.Cancion.listaReproduccion" para utilisar "dnSetlistaReproduccion()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getTitulo, cambiando el uso del campo "main.Cancion.titulo" para utilisar "dnGettitulo()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setTitulo, cambiando el uso del campo "main.Cancion.titulo" para utilisar "dnSettitulo()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getId_cancion, cambiando el uso del campo "main.Cancion.id_cancion" para utilisar "dnGetid_cancion()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setId_cancion, cambiando el uso del campo "main.Cancion.id_cancion" para utilisar "dnSetid_cancion()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getAlbum, cambiando el uso del campo "main.Cancion.album" para utilisar "dnGetalbum()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setAlbum, cambiando el uso del campo "main.Cancion.album" para utilisar "dnSetalbum()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getPrecio, cambiando el uso del campo "main.Cancion.precio" para utilisar "dnGetprecio()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.setPrecio, cambiando el uso del campo "main.Cancion.precio" para utilisar "dnSetprecio()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.getReproduccionesCancion, cambiando el uso del campo "main.Cancion.listaReproduccion" para utilisar "dnGetlistaReproduccion()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Cancion.anyadirRepACancion, cambiando el uso del campo "main.Cancion.listaReproduccion" para utilisar "dnGetlistaReproduccion()"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "org.datanucleus.state.StateManager dnStateManager"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte dnFlags"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B dnFieldFlags"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class dnPersistableSuperclass"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; dnFieldNames"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int dnInheritedFieldCount"
+05 abr 2016 - 15:57:21,416 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "main.Cancion()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetObjectId()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetVersion()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnPreSerialize()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.ExecutionContext dnGetExecutionContext()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDeleted()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDirty()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsNew()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsPersistent()"
+05 abr 2016 - 15:57:21,417 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsTransactional()"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnMakeDirty(class java.lang.String fieldName)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance(class java.lang.Object key)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideFields(class [I indices)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFields(class [I indices)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFlags()"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceStateManager(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDetached()"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm, class java.lang.Object obj)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceField(int index)"
+05 abr 2016 - 15:57:21,418 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideField(int index)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyField(class main.Cancion obj, int index)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyFields(class java.lang.Object obj, class [I indices)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __dnFieldFlagsInit()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __dnGetInheritedFieldCount()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetManagedFieldCount()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___dn$loadClass(class java.lang.String className)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnSuperClone()"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetalbum(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetalbum(class main.Cancion objPC, class java.lang.String val)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "main.Artista dnGetartista(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetartista(class main.Cancion objPC, class main.Artista val)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetid_cancion(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,419 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetid_cancion(class main.Cancion objPC, int val)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList dnGetlistaReproduccion(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetlistaReproduccion(class main.Cancion objPC, class java.util.ArrayList val)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList dnGetlistaUsuario(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetlistaUsuario(class main.Cancion objPC, class java.util.ArrayList val)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetprecio(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetprecio(class main.Cancion objPC, int val)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGettitulo(class main.Cancion objPC)"
+05 abr 2016 - 15:57:21,420 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSettitulo(class main.Cancion objPC, class java.lang.String val)"
+05 abr 2016 - 15:57:21,420 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\axi_e\git\TraLaLa\TraLaLa\bin\main\Cancion.class" con definicion enhanced
+05 abr 2016 - 15:57:21,421 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Cancion" ha terminado
+05 abr 2016 - 15:57:21,421 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Reproduccion" empezando ...
+05 abr 2016 - 15:57:21,421 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no implementa el interfaz "org.datanucleus.enhancer.Persistable"!
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnFlags" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnFieldTypes" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnFieldNames" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnFieldFlags" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnReplaceField" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnIsTransactional" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnSuperClone" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnProvideFields" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "___dn$loadClass" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnIsDirty" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnReplaceFlags" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnIsDetached" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnMakeDirty" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnIsDeleted" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnProvideField" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnPreSerialize" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnGetObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnGetVersion" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,422 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnIsNew" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnCopyField" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnCopyFields" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnIsPersistent" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "dnReplaceFields" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Reproduccion" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: org.datanucleus.enhancer.Persistable
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.<init> : ignorando enhance de set del campo "main.Reproduccion.fecha_rep"
+05 abr 2016 - 15:57:21,423 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.<init> : ignorando enhance de set del campo "main.Reproduccion.hora_rep"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.<init> : ignorando enhance de set del campo "main.Reproduccion.usuario"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.<init> : ignorando enhance de set del campo "main.Reproduccion.cancion"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.getUsuario, cambiando el uso del campo "main.Reproduccion.usuario" para utilisar "dnGetusuario()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.setUsuario, cambiando el uso del campo "main.Reproduccion.usuario" para utilisar "dnSetusuario()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.getCancion, cambiando el uso del campo "main.Reproduccion.cancion" para utilisar "dnGetcancion()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.setCancion, cambiando el uso del campo "main.Reproduccion.cancion" para utilisar "dnSetcancion()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.getFecha_rep, cambiando el uso del campo "main.Reproduccion.fecha_rep" para utilisar "dnGetfecha_rep()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.setFecha_rep, cambiando el uso del campo "main.Reproduccion.fecha_rep" para utilisar "dnSetfecha_rep()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.getHora_rep, cambiando el uso del campo "main.Reproduccion.hora_rep" para utilisar "dnGethora_rep()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Reproduccion.setHora_rep, cambiando el uso del campo "main.Reproduccion.hora_rep" para utilisar "dnSethora_rep()"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "org.datanucleus.state.StateManager dnStateManager"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte dnFlags"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B dnFieldFlags"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class dnPersistableSuperclass"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; dnFieldNames"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int dnInheritedFieldCount"
+05 abr 2016 - 15:57:21,424 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "main.Reproduccion()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetObjectId()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetVersion()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnPreSerialize()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.ExecutionContext dnGetExecutionContext()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDeleted()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDirty()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsNew()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsPersistent()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsTransactional()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnMakeDirty(class java.lang.String fieldName)"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance(class java.lang.Object key)"
+05 abr 2016 - 15:57:21,425 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideFields(class [I indices)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFields(class [I indices)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFlags()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceStateManager(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDetached()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm, class java.lang.Object obj)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceField(int index)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideField(int index)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyField(class main.Reproduccion obj, int index)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyFields(class java.lang.Object obj, class [I indices)"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __dnFieldFlagsInit()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __dnGetInheritedFieldCount()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetManagedFieldCount()"
+05 abr 2016 - 15:57:21,426 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___dn$loadClass(class java.lang.String className)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnSuperClone()"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "main.Cancion dnGetcancion(class main.Reproduccion objPC)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetcancion(class main.Reproduccion objPC, class main.Cancion val)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetfecha_rep(class main.Reproduccion objPC)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetfecha_rep(class main.Reproduccion objPC, int val)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGethora_rep(class main.Reproduccion objPC)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSethora_rep(class main.Reproduccion objPC, int val)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetprecio(class main.Reproduccion objPC)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetprecio(class main.Reproduccion objPC, int val)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "main.Usuario dnGetusuario(class main.Reproduccion objPC)"
+05 abr 2016 - 15:57:21,427 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetusuario(class main.Reproduccion objPC, class main.Usuario val)"
+05 abr 2016 - 15:57:21,427 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\axi_e\git\TraLaLa\TraLaLa\bin\main\Reproduccion.class" con definicion enhanced
+05 abr 2016 - 15:57:21,428 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Reproduccion" ha terminado
+05 abr 2016 - 15:57:21,428 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Usuario" empezando ...
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no implementa el interfaz "org.datanucleus.enhancer.Persistable"!
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnFlags" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnFieldTypes" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnFieldNames" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnFieldFlags" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el campo "dnPersistableSuperclass" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnReplaceField" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnIsTransactional" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnNewInstance" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnSuperClone" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnProvideFields" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "___dn$loadClass" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnGetManagedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnIsDirty" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnReplaceStateManager" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnReplaceFlags" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnIsDetached" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnMakeDirty" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "__dnPersistableSuperclassInit" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnIsDeleted" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "__dnFieldFlagsInit" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "__dnFieldTypesInit" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnProvideField" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnPreSerialize" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnGetObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnGetVersion" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnGetTransactionalObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnIsNew" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnCopyKeyFieldsToObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnCopyField" pero lo necesita
+05 abr 2016 - 15:57:21,429 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnCopyKeyFieldsFromObjectId" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnGetExecutionContext" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnCopyFields" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "__dnGetInheritedFieldCount" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnNewObjectIdInstance" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnIsPersistent" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "dnReplaceFields" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - La clase "main.Usuario" no tiene el metodo "__dnFieldNamesInit" pero lo necesita
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - Agregando el interfaz: org.datanucleus.enhancer.Persistable
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.listaReproduccion"
+05 abr 2016 - 15:57:21,430 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.historialRep"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.listaAmigos"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.nombreUsu"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.usuario_paypal"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.contrasenya_paypal"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.numTarjCred"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.<init> : ignorando enhance de set del campo "main.Usuario.ventajoso"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getNombreUsu, cambiando el uso del campo "main.Usuario.nombreUsu" para utilisar "dnGetnombreUsu()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setNombreUsu, cambiando el uso del campo "main.Usuario.nombreUsu" para utilisar "dnSetnombreUsu()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getUsuario_paypal, cambiando el uso del campo "main.Usuario.usuario_paypal" para utilisar "dnGetusuario_paypal()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setUsuario_paypal, cambiando el uso del campo "main.Usuario.usuario_paypal" para utilisar "dnSetusuario_paypal()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getContrasenya_paypal, cambiando el uso del campo "main.Usuario.contrasenya_paypal" para utilisar "dnGetcontrasenya_paypal()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setContrasenya_paypal, cambiando el uso del campo "main.Usuario.contrasenya_paypal" para utilisar "dnSetcontrasenya_paypal()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getNumTarjCred, cambiando el uso del campo "main.Usuario.numTarjCred" para utilisar "dnGetnumTarjCred()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setNumTarjCred, cambiando el uso del campo "main.Usuario.numTarjCred" para utilisar "dnSetnumTarjCred()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getVentajoso, cambiando el uso del campo "main.Usuario.ventajoso" para utilisar "dnGetventajoso()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setVentajoso, cambiando el uso del campo "main.Usuario.ventajoso" para utilisar "dnSetventajoso()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.importeMensual, cambiando el uso del campo "main.Usuario.importeMensual" para utilisar "dnGetimporteMensual()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setimporteMensual, cambiando el uso del campo "main.Usuario.importeMensual" para utilisar "dnSetimporteMensual()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.calculoNumAmigos, cambiando el uso del campo "main.Usuario.listaAmigos" para utilisar "dnGetlistaAmigos()"
+05 abr 2016 - 15:57:21,431 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getListaReproduccion, cambiando el uso del campo "main.Usuario.listaReproduccion" para utilisar "dnGetlistaReproduccion()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setListaReproduccion, cambiando el uso del campo "main.Usuario.listaReproduccion" para utilisar "dnSetlistaReproduccion()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getHistorialRep, cambiando el uso del campo "main.Usuario.historialRep" para utilisar "dnGethistorialRep()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setHistorialRep, cambiando el uso del campo "main.Usuario.historialRep" para utilisar "dnSethistorialRep()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.getListaAmigos, cambiando el uso del campo "main.Usuario.listaAmigos" para utilisar "dnGetlistaAmigos()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.setListaAmigos, cambiando el uso del campo "main.Usuario.listaAmigos" para utilisar "dnSetlistaAmigos()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.anyadirCancionALista, cambiando el uso del campo "main.Usuario.listaReproduccion" para utilisar "dnGetlistaReproduccion()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.anyadirAmigo, cambiando el uso del campo "main.Usuario.listaAmigos" para utilisar "dnGetlistaAmigos()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Enhancing metodo original main.Usuario.anyadirRepAUsuario, cambiando el uso del campo "main.Usuario.historialRep" para utilisar "dnGethistorialRep()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "org.datanucleus.state.StateManager dnStateManager"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "byte dnFlags"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[B dnFieldFlags"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "java.lang.Class dnPersistableSuperclass"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.Class; dnFieldTypes"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "[Ljava.lang.String; dnFieldNames"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el campo "int dnInheritedFieldCount"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void <clinit>()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el constructor "main.Usuario()"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldConsumer fc, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsFromObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,432 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyKeyFieldsToObjectId(interface org.datanucleus.enhancer.Persistable$ObjectIdFieldSupplier fs, class java.lang.Object oid)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetObjectId()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetVersion()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnPreSerialize()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.ExecutionContext dnGetExecutionContext()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnGetTransactionalObjectId()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDeleted()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDirty()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsNew()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsPersistent()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsTransactional()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnMakeDirty(class java.lang.String fieldName)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnNewObjectIdInstance(class java.lang.Object key)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideFields(class [I indices)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFields(class [I indices)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceFlags()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceStateManager(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnIsDetached()"
+05 abr 2016 - 15:57:21,433 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "org.datanucleus.enhancer.Persistable dnNewInstance(interface org.datanucleus.state.StateManager sm, class java.lang.Object obj)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnReplaceField(int index)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnProvideField(int index)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyField(class main.Usuario obj, int index)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnCopyFields(class java.lang.Object obj, class [I indices)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.String; __dnFieldNamesInit()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[Ljava.lang.Class; __dnFieldTypesInit()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "[B __dnFieldFlagsInit()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int __dnGetInheritedFieldCount()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetManagedFieldCount()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class __dnPersistableSuperclassInit()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Class ___dn$loadClass(class java.lang.String className)"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.Object dnSuperClone()"
+05 abr 2016 - 15:57:21,434 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetcontrasenya_paypal(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetcontrasenya_paypal(class main.Usuario objPC, class java.lang.String val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList dnGethistorialRep(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSethistorialRep(class main.Usuario objPC, class java.util.ArrayList val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetimporteMensual(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetimporteMensual(class main.Usuario objPC, int val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList dnGetlistaAmigos(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetlistaAmigos(class main.Usuario objPC, class java.util.ArrayList val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.util.ArrayList dnGetlistaReproduccion(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetlistaReproduccion(class main.Usuario objPC, class java.util.ArrayList val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetnombreUsu(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetnombreUsu(class main.Usuario objPC, class java.lang.String val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "int dnGetnumTarjCred(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetnumTarjCred(class main.Usuario objPC, int val)"
+05 abr 2016 - 15:57:21,435 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "java.lang.String dnGetusuario_paypal(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,436 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetusuario_paypal(class main.Usuario objPC, class java.lang.String val)"
+05 abr 2016 - 15:57:21,436 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "boolean dnGetventajoso(class main.Usuario objPC)"
+05 abr 2016 - 15:57:21,436 (main) DEBUG [DataNucleus.Enhancer] - Agregando el metodo "void dnSetventajoso(class main.Usuario objPC, boolean val)"
+05 abr 2016 - 15:57:21,436 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\axi_e\git\TraLaLa\TraLaLa\bin\main\Usuario.class" con definicion enhanced
+05 abr 2016 - 15:57:21,437 (main) DEBUG [DataNucleus.Enhancer] - Enhance de la clase "main.Usuario" ha terminado
+05 abr 2016 - 15:57:21,437 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 4 clases.
