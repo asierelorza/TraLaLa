@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/data/jdo-api-3.1-rc1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/data/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/data/mysql-connector-java-5.1.28.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/javax.persistence.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
@@ -19,13 +20,20 @@ public class Usuario {
 	private int importeMensual; //Puede que para todos los usuarios el importe mensual no sea el mismo.
 	
 	@Join
+	@Persistent(mappedBy="Usuario", dependentElement="true")
 	private ArrayList<Cancion> listaReproduccion = new ArrayList<Cancion>(); // Lista de reproduccion de canciones de cada usuario. Solo puede tener una lista de rep.
 	
 	@Join
+	@Persistent(mappedBy="Usuario", dependentElement="true")
 	private ArrayList<Reproduccion> historialRep = new ArrayList<Reproduccion>(); // Historial de reproduccion de cada usuario
 	
 	@Join
+	@Persistent(mappedBy="Usuario", dependentElement="true")
 	private ArrayList<Usuario> listaAmigos = new ArrayList<Usuario>(); // Lista de amigos de cada usuario
+	
+	@Join
+	@Persistent(mappedBy="Usuario", dependentElement="true")
+	private ArrayList <?> listaPagos;
 	
 	public Usuario(String nombreUsu, String usuario_paypal, String contrasenya_paypal, int numTarjCred, boolean ventajoso){
 		this.nombreUsu = nombreUsu;
@@ -33,6 +41,12 @@ public class Usuario {
 		this.contrasenya_paypal = contrasenya_paypal;
 		this.numTarjCred = numTarjCred;
 		this.ventajoso=ventajoso;
+		if(ventajoso == true){
+			listaPagos = new ArrayList<PagoVentajoso>();
+		}
+		else{
+			listaPagos = new ArrayList<PagoConvencional>();
+		}
 	}
 
 	public String getNombreUsu() {
@@ -109,6 +123,14 @@ public class Usuario {
 
 	public void setListaAmigos(ArrayList<Usuario> listaAmigos) {
 		this.listaAmigos = listaAmigos;
+	}
+	
+	public ArrayList<?> getListaPagos() {
+		return listaPagos;
+	}
+
+	public void setListaPagos(ArrayList<?> listaPagos) {
+		this.listaPagos = listaPagos;
 	}
 	
 	public void anyadirCancionALista(Cancion cancion){

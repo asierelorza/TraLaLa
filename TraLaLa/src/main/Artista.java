@@ -2,7 +2,9 @@ package main;
 
 import java.util.ArrayList;
 
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
@@ -12,6 +14,9 @@ public class Artista {
 	private int id_artista; // Clave primaria
 	
 	private String nomArtista;
+	
+	@Join
+	@Persistent(mappedBy="Artista", dependentElement="true")
 	private ArrayList<Cancion> listaCanciones = new ArrayList<Cancion>();
 	
 	public Artista(int id_artista, String nomArtista){

@@ -37,9 +37,11 @@ public class Main {
 			//Start the transaction
 			tx.begin();
 			
+		
 			pm.makePersistent(uno);
 			pm.makePersistent(dos);		
 			pm.makePersistent(tres);	
+
 			
 			//End the transaction
 			tx.commit();			
@@ -87,71 +89,64 @@ public class Main {
 //			}
 //		}
 //
-//		try {
-//			System.out.println("Modificar valor usuario 1 ...");			
-//			//Get the Persistence Manager
-//			pm = pmf.getPersistenceManager();
-//			//Obtain the current transaction
-//			tx = pm.currentTransaction();		
-//			//Start the transaction
-//			tx.begin();
-//
-//			Query query = pm.newQuery(Usuario.class);
-//			query.setFilter("this.nombreUsu == 'Asier'");
-//			
-//			@SuppressWarnings("unchecked")
-//			List<Usuario> usuarios = (List<Usuario>) query.execute();
-//
-//			for (Usuario i : usuarios) {
-//				i.setNombreUsu("Javier");
-//				pm.makePersistent(i);
-//				
-//			}
-//			
-//			//End the transaction
-//			tx.commit();
-//		} catch (Exception ex) {
-//			System.err.println(" $ Error retrieving accounts using a 'Query': " + ex.getMessage());
-//		} finally {
-//			if (tx != null && tx.isActive()) {
-//				tx.rollback();
-//			}
-//			
-//			if (pm != null && !pm.isClosed()) {
-//				pm.close();
-//			}
-//		}
-//
-//		try {
-//			System.out.println("Borrar Usuario 2 ...");			
-//			//Get the Persistence Manager
-//			pm = pmf.getPersistenceManager();
-//			//Obtain the current transaction
-//			tx = pm.currentTransaction();		
-//			//Start the transaction
-//			tx.begin();
-//
-//			Query query = pm.newQuery(Usuario.class);
-//			
-//			query.setFilter("this.nombreUsu == 'iker'");
-//			Long number = (Long)query.deletePersistentAll();
-//			
-//			
-//			
-//			//End the transaction
-//			tx.commit();
-//		} catch (Exception ex) {
-//			System.err.println(" $ Error deleting Usuario 2: " + ex.getMessage());
-//		} finally {
-//			if (tx != null && tx.isActive()) {
-//				tx.rollback();
-//			}
-//			
-//			if (pm != null && !pm.isClosed()) {
-//				pm.close();
-//			}
-//		}
-//
+		try {
+			System.out.println("Modificar valor usuario 1 ...");			
+			//Get the Persistence Manager
+			pm = pmf.getPersistenceManager();
+			//Obtain the current transaction
+			tx = pm.currentTransaction();		
+			//Start the transaction
+			tx.begin();
+			
+			Usuario bat = pm.getObjectById(Usuario.class, "Asier");
+			bat.setUsuario_paypal("Doronsoro");
+
+
+			//End the transaction
+			tx.commit();
+			
+		} catch (Exception ex) {
+			System.err.println(" $ Error retrieving accounts using a 'Query': " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+			if (pm != null && !pm.isClosed()) {
+				pm.close();
+			}
+		}
+
+		try {
+			System.out.println("Borrar Usuario 2 ...");			
+			//Get the Persistence Manager
+			pm = pmf.getPersistenceManager();
+			//Obtain the current transaction
+			tx = pm.currentTransaction();		
+			//Start the transaction
+			tx.begin();
+
+			Query query = pm.newQuery(Usuario.class);
+			
+
+			
+			Usuario bat = pm.getObjectById(Usuario.class, "Iker");
+			pm.deletePersistent(bat);
+			
+			//End the transaction
+			tx.commit();
+		} catch (Exception ex) {
+			System.err.println(" $ Error deleting Usuario 2: " + ex.getMessage());
+		} finally {
+			if (tx != null && tx.isActive()) {
+				tx.rollback();
+			}
+			
+			if (pm != null && !pm.isClosed()) {
+				pm.close();
+			}
+		}
+
 //		try {
 //			System.out.println("- Cleaning the DB...");			
 //			//Get the Persistence Manager

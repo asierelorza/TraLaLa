@@ -1,5 +1,11 @@
 package main;
 
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.persistence.InheritanceType;
+
+@PersistenceCapable
+//@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
 public abstract class Pago {
 
 	protected int pago;
@@ -7,7 +13,6 @@ public abstract class Pago {
 	protected int porcentaje;
 	int mes;
 
-	 abstract int importePagoConvencional(Usuario usuario);
-	 abstract int importePagoVentajoso (Usuario usuario);
+	 abstract int importePago(Usuario usuario);
 	 abstract void setMes(int mes);
 }

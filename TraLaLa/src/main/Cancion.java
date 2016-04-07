@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
@@ -17,9 +18,11 @@ public class Cancion {
 	private int precio; // Precio que se debe pagar por canción, necesario para el desarrollo de los algoritmos de pago.
 	
 	@Join
+	@Persistent(mappedBy="Cancion", dependentElement="true")
 	private ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>(); // Guardara cuantas veces aparece cada cancion en una lista de reproduccion de cada usuario
 	
 	@Join
+	@Persistent(mappedBy="Cancion", dependentElement="true")
 	private ArrayList<Reproduccion> listaReproduccion = new ArrayList<Reproduccion>(); // Guardara las reproducciones que se han dado de cada cancion
 	
 	private Artista artista;
