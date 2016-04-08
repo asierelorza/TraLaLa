@@ -33,7 +33,7 @@ public class Usuario {
 	
 	@Join
 	@Persistent(mappedBy="Usuario", dependentElement="true")
-	private ArrayList <?> listaPagos;
+	private ArrayList <Pago> listaPagos;
 	
 	public Usuario(String nombreUsu, String usuario_paypal, String contrasenya_paypal, int numTarjCred, boolean ventajoso){
 		this.nombreUsu = nombreUsu;
