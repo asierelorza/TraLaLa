@@ -7,7 +7,7 @@ import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
 //@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
-public class PagoVentajoso extends Pago{
+public class PagoVentajoso extends PagoConvencional{
 
 
 

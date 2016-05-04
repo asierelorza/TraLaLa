@@ -12,6 +12,7 @@ public abstract class Pago {
 	protected int importeMensual;
 	protected int porcentaje;
 	int mes;
+	protected Usuario usuario;
 
 	 abstract int importePago(Usuario usuario);
 	 abstract void setMes(int mes);

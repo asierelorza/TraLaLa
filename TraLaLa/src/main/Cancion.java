@@ -18,15 +18,15 @@ public class Cancion {
 	private int precio; // Precio que se debe pagar por canción, necesario para el desarrollo de los algoritmos de pago.
 	
 	@Join
-	@Persistent(mappedBy="Cancion", dependentElement="true")
+//	@Persistent(mappedBy="cancion", dependentElement="true")
 	private ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>(); // Guardara cuantas veces aparece cada cancion en una lista de reproduccion de cada usuario
 	
 	@Join
-	@Persistent(mappedBy="Cancion", dependentElement="true")
+//	@Persistent(mappedBy="cancion", dependentElement="true")
 	private ArrayList<Reproduccion> listaReproduccion = new ArrayList<Reproduccion>(); // Guardara las reproducciones que se han dado de cada cancion
 	
 	private Artista artista;
-	
+	private Usuario usuario;
 	public Cancion(String titulo, int id_cancion, String album, int precio, Artista artista){
 		this.titulo = titulo;
 		this.id_cancion = id_cancion;

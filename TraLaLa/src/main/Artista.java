@@ -16,7 +16,7 @@ public class Artista {
 	private String nomArtista;
 	
 	@Join
-	@Persistent(mappedBy="Artista", dependentElement="true")
+//	@Persistent(mappedBy="artista", dependentElement="true")
 	private ArrayList<Cancion> listaCanciones = new ArrayList<Cancion>();
 	
 	public Artista(int id_artista, String nomArtista){
