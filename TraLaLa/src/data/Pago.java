@@ -8,7 +8,7 @@ import javax.persistence.InheritanceType;
 //@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
 public abstract class Pago {
 
-	protected int pago;
+	protected int pago; // El numero de pago, clave primaria
 	protected int importeMensual;
 	protected int porcentaje;
 	int mes;

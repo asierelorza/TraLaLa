@@ -11,6 +11,8 @@ public class GlobalService extends UnicastRemoteObject implements IGlobalService
 	public IPagoService pago;
 	public IReproduccionService reproduccion;
 	
+	public String name;
+	
 	protected GlobalService() throws RemoteException {
 		super();
 		
