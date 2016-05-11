@@ -42,6 +42,14 @@ public class Usuario {
 		this.ventajoso=ventajoso;
 
 	}
+	
+	public Usuario(Usuario usuario){
+		this.nombreUsu = usuario.getNombreUsu();
+		this.usuario_paypal = usuario.getUsuario_paypal();
+		this.contrasenya_paypal = usuario.getContrasenya_paypal();
+		this.numTarjCred = usuario.getNumTarjCred();
+		this.ventajoso= usuario.getVentajoso();
+	}
 
 	public String getNombreUsu() {
 		return nombreUsu;
