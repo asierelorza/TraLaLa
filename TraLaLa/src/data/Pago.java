@@ -1,4 +1,4 @@
-package main;
+package data;
 
 import javax.jdo.annotations.Inheritance;
 import javax.jdo.annotations.PersistenceCapable;
