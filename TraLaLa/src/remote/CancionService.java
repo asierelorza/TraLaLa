@@ -1,8 +1,11 @@
 package remote;
 
+import dao.IDB_DAO;
 import data.Cancion;
 
 public class CancionService implements ICancionService {
+	
+	public IDB_DAO db_dao;
 	
 	Cancion cancion; // En funcion de lo que se obtiene de la BD (DAO)
 
