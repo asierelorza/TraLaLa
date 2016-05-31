@@ -3,13 +3,24 @@ package remote;
 import dao.IDB_DAO;
 import data.Cancion;
 
-public class CancionService implements ICancionService {
+public class CancionService {
 	
 	public IDB_DAO db_dao;
 	
+	private static CancionService instance;
+	
 	Cancion cancion; // En funcion de lo que se obtiene de la BD (DAO)
+	
+	public static CancionService getInstance() {
+		if (instance == null) {
+			instance = new CancionService();
+		}
+		
+		return instance;
+	}
 
-	@Override
+
+	
 	public Cancion getCancion(int id_cancion) {
 	
 		// Se tendra que hacer la conexion con el DAO para obtener la cancion y devolver

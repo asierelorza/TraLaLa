@@ -8,14 +8,24 @@ import javax.jdo.Transaction;
 
 import data.Usuario;
 
-public class DB_DAO implements IDB_DAO {
+public class DB_DAO {
+	
+	private static DB_DAO instance;
 	
 	PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 	PersistenceManager pm = null;
 	Transaction tx = null;
 	
-	@Override
-	public void registrarUsuario(Usuario usuario){				
+	public static DB_DAO getInstance() {
+		if (instance == null) {
+			instance = new DB_DAO();
+		}		
+		
+		return instance;
+	}
+	
+	
+	public boolean registrarUsuario(Usuario usuario){				
 		
 		try {
 			System.out.println("- Store objects in the DB");			
@@ -30,12 +40,18 @@ public class DB_DAO implements IDB_DAO {
 			pm.makePersistent(usuario);
 			
 			
+			
 			//End the transaction
-			tx.commit();			
+			tx.commit();
+			
+			return true;
 
 		} catch (Exception ex) {
 			System.err.println(" $ Error storing objects in the DB: " + ex.getMessage());
 			ex.printStackTrace();
+			
+			return false;
+			
 		} finally {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
@@ -48,7 +64,7 @@ public class DB_DAO implements IDB_DAO {
 		}
 	}
 
-	@Override
+	
 	public void modificarUsuario(Usuario usuario) {
 		
 		try {

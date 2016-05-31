@@ -3,13 +3,14 @@ package remote;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
+import data.Cancion;
+
 public class GlobalService extends UnicastRemoteObject implements IGlobalService {
 	
 	private static final long serialVersionUID = 1L;
-	public IUsuarioService usuario;
-	public ICancionService cancion;
-	public IPagoService pago;
-	public IReproduccionService reproduccion;
+	
+	private static GlobalService instance;
+
 	
 	public String name;
 	
@@ -18,25 +19,31 @@ public class GlobalService extends UnicastRemoteObject implements IGlobalService
 		
 	}
 	
-	@Override
-	public IUsuarioService getUsuarioService() {
+	public static GlobalService getInstance() {
+		if (instance == null) {
+			try {
+				instance = new GlobalService();
+			} catch (Exception ex) {
+				System.err.println("# Error creating GlobalService: " + ex);
+			}
+		}
 		
-		return this.usuario;
+		return instance;
 	}
+
 	@Override
-	public ICancionService getCancionService() {
+	public boolean login(String nombreUsu, String usuPayPal, String contraPayPal, int numTarjCred, boolean ventajoso) {
+		return UsuarioService.getInstance().registrarUsuario(nombreUsu, usuPayPal, contraPayPal, numTarjCred, ventajoso);
+		// Sera el ServiceLocator el que sacara el mensaje de si se ha registrado bien o no en funcion de esto
 		
-		return this.cancion;
 	}
+
 	@Override
-	public IReproduccionService getReproduccionService() {
+	public boolean reproducirCancion(Cancion cancion) {
 		
-		return this.reproduccion;
+		return false;
 	}
-	@Override
-	public IPagoService getPagoService() {
-		
-		return this.pago;
-	}
+	
+	
 
 }
