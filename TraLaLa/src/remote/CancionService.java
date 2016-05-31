@@ -1,11 +1,9 @@
 package remote;
 
-import dao.IDB_DAO;
 import data.Cancion;
 
 public class CancionService {
 	
-	public IDB_DAO db_dao;
 	
 	private static CancionService instance;
 	

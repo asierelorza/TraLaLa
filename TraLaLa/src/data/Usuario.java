@@ -7,7 +7,7 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
+@PersistenceCapable(detachable="true")
 public class Usuario {
 	
 	@PrimaryKey
@@ -20,18 +20,15 @@ public class Usuario {
 	private int importeMensual; //Puede que para todos los usuarios el importe mensual no sea el mismo.
 	
 	@Join
-//	@Persistent(mappedBy="usuario", dependentElement="true")
 	private ArrayList<Cancion> listaReproduccion = new ArrayList<Cancion>(); // Lista de reproduccion de canciones de cada usuario. Solo puede tener una lista de rep.
 	
 	@Join
-//	@Persistent(mappedBy="usuario", dependentElement="true")
 	private ArrayList<Reproduccion> historialRep = new ArrayList<Reproduccion>(); // Historial de reproduccion de cada usuario
 	
 	@Join
 	private ArrayList<Usuario> listaAmigos = new ArrayList<Usuario>(); // Lista de amigos de cada usuario
 	
 	@Join
-//	@Persistent(mappedBy="usuario", dependentElement="true")
 	private ArrayList<Pago> listaPagos= new ArrayList<Pago>();
 	
 	public Usuario(String nombreUsu, String usuario_paypal, String contrasenya_paypal, int numTarjCred, boolean ventajoso){

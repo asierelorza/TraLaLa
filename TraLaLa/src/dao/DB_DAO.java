@@ -11,11 +11,7 @@ import data.Usuario;
 public class DB_DAO {
 	
 	private static DB_DAO instance;
-	
-	PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
-	PersistenceManager pm = null;
-	Transaction tx = null;
-	
+		
 	public static DB_DAO getInstance() {
 		if (instance == null) {
 			instance = new DB_DAO();
@@ -25,7 +21,11 @@ public class DB_DAO {
 	}
 	
 	
-	public boolean registrarUsuario(Usuario usuario){				
+	public boolean registrarUsuario(Usuario usuario){	
+		
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		PersistenceManager pm = null;
+		Transaction tx = null;
 		
 		try {
 			System.out.println("- Store objects in the DB");			
@@ -65,36 +65,36 @@ public class DB_DAO {
 	}
 
 	
-	public void modificarUsuario(Usuario usuario) {
-		
-		try {
-			System.out.println("Modificar valor usuario 1 ...");			
-			//Get the Persistence Manager
-			pm = pmf.getPersistenceManager();
-			//Obtain the current transaction
-			tx = pm.currentTransaction();		
-			//Start the transaction
-			tx.begin();
-			
-			Usuario bat = pm.getObjectById(Usuario.class, usuario.getNombreUsu());
-			bat = new Usuario(usuario);
-
-
-			//End the transaction
-			tx.commit();
-			
-		} catch (Exception ex) {
-			System.err.println(" $ Error retrieving accounts using a 'Query': " + ex.getMessage());
-		} finally {
-			if (tx != null && tx.isActive()) {
-				tx.rollback();
-			}
-			
-			if (pm != null && !pm.isClosed()) {
-				pm.close();
-			}
-		}
-		
-		
-	}
+//	public void modificarUsuario(Usuario usuario) {
+//		
+//		try {
+//			System.out.println("Modificar valor usuario 1 ...");			
+//			//Get the Persistence Manager
+//			pm = pmf.getPersistenceManager();
+//			//Obtain the current transaction
+//			tx = pm.currentTransaction();		
+//			//Start the transaction
+//			tx.begin();
+//			
+//			Usuario bat = pm.getObjectById(Usuario.class, usuario.getNombreUsu());
+//			bat = new Usuario(usuario);
+//
+//
+//			//End the transaction
+//			tx.commit();
+//			
+//		} catch (Exception ex) {
+//			System.err.println(" $ Error retrieving accounts using a 'Query': " + ex.getMessage());
+//		} finally {
+//			if (tx != null && tx.isActive()) {
+//				tx.rollback();
+//			}
+//			
+//			if (pm != null && !pm.isClosed()) {
+//				pm.close();
+//			}
+//		}
+//		
+//		
+//	}
 }
