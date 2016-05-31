@@ -14,26 +14,15 @@ public class Reproduccion { // Una reproduccion se creara en el main, y luego se
 	@PrimaryKey
 	private Time hora_rep;
 	@PrimaryKey
-	private Usuario usuario;
-	@PrimaryKey
 	private Cancion cancion;
 	
 	private int precio;//Mirarlo mejor. Si tenerlo en canción o en Reproducción. Pendiente... 
 	
-	public Reproduccion(Date fecha_rep, Time hora_rep, Usuario usuario, Cancion cancion){
+	public Reproduccion(Date fecha_rep, Time hora_rep, Cancion cancion){
 		this.fecha_rep = fecha_rep;
 		this.hora_rep = hora_rep;
-		this.usuario = usuario;
 		this.cancion = cancion;
 	
-	}
-
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
 	}
 
 	public Cancion getCancion() {

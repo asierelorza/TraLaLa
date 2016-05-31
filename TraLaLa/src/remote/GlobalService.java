@@ -4,6 +4,8 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 import data.Cancion;
+import data.Usuario;
+import dto.UsuarioFavDTO;
 
 public class GlobalService extends UnicastRemoteObject implements IGlobalService {
 	
@@ -42,7 +44,11 @@ public class GlobalService extends UnicastRemoteObject implements IGlobalService
 	@Override
 	public boolean reproducirCancion(Cancion cancion) {
 		
-		return false;
+		return ReproduccionService.getInstance().reproducirCancion(cancion);
+	}
+	
+	public UsuarioFavDTO getUsuarioDTO(Usuario usuario){
+		return UsuarioService.getInstance().getUsuarioFav(usuario);
 	}
 	
 	

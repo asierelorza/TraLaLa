@@ -143,6 +143,16 @@ public class Usuario {
 	public void anyadirRepAUsuario(Reproduccion rep){
 		this.historialRep.add(rep);
 	}
+
+	public int getImporteMensual() {
+		return importeMensual;
+	}
+
+	public void setImporteMensual(int importeMensual) {
+		this.importeMensual = importeMensual;
+	}
+	
+	
 	
 
 }

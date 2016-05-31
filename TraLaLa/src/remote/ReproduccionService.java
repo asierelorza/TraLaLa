@@ -1,5 +1,7 @@
 package remote;
 
+import dao.DB_DAO;
+import data.Cancion;
 
 public class ReproduccionService {
 	
@@ -12,6 +14,11 @@ public class ReproduccionService {
 		}
 		
 		return instance;
+	}
+	
+	public boolean reproducirCancion(Cancion cancion){
+		
+		return DB_DAO.getInstance().reproducirCancion(cancion);		
 	}
 
 

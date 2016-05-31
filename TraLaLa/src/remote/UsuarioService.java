@@ -2,6 +2,8 @@ package remote;
 
 import dao.DB_DAO;
 import data.Usuario;
+import dto.UsuarioFavAssembler;
+import dto.UsuarioFavDTO;
 
 public class UsuarioService {
 	
@@ -19,11 +21,14 @@ public class UsuarioService {
 	
 	public boolean registrarUsuario(String nombre_usu, String usuario_paypal, String contra_paypal, int numTarjCred, boolean ventajoso) {
 		
-		Usuario nuevoUsu = new Usuario(nombre_usu, usuario_paypal, contra_paypal, numTarjCred, ventajoso);
 		
-		return DB_DAO.getInstance().registrarUsuario(nuevoUsu);
+		return DB_DAO.getInstance().registrarUsuario(nombre_usu, usuario_paypal, contra_paypal, numTarjCred, ventajoso);
 		
 		
+	}
+	
+	public UsuarioFavDTO getUsuarioFav(Usuario usuario){
+		return UsuarioFavAssembler.getInstance().generarDTO(usuario);
 	}
 
 }

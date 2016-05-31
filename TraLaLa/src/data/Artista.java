@@ -1,5 +1,6 @@
 package data;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import javax.jdo.annotations.Join;
@@ -8,8 +9,8 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
-public class Artista {
-	
+public class Artista {  
+
 	@PrimaryKey
 	private int id_artista; // Clave primaria
 	
