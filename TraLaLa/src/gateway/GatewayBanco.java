@@ -2,7 +2,7 @@ package gateway;
 
 import serviciosExternos.IBanco;
 
-public class GatewayBanco extends Gateway implements IGatewayBanco {
+public class GatewayBanco extends Gateway {
 	
 	public IBanco banco;
 	

@@ -4,12 +4,14 @@ import data.Pago;
 import data.Usuario;
 import factory.FactoryGateways;
 import factory.FactoryPagos;
-import gateway.Gateway;
+import gateway.IGateway;
 
 public class PagoService {
 	
 		
 	private static PagoService instance;
+	
+	private IGateway igteway;
 	
 	public static PagoService getInstance() {
 		if (instance == null) {
@@ -27,9 +29,9 @@ public class PagoService {
 	}
 	
 	public String efectuarPago(String numTarj, int importe, String tipo){
-		Gateway gteway = FactoryGateways.getInstance().crearGateway(tipo);
-		gteway.efectuarPago(numTarj, importe);
-		return gteway.getMensaje();
+		this.igteway = (IGateway) FactoryGateways.getInstance().crearGateway(tipo);
+		this.igteway.efectuarPago(numTarj, importe);
+		return this.igteway.getMensaje();
 		
 	}
 

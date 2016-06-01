@@ -2,7 +2,7 @@ package gateway;
 
 import serviciosExternos.IPayPal;
 
-public class GatewayPayPal extends Gateway implements IGatewayPayPal {
+public class GatewayPayPal extends Gateway {
 	
 	public IPayPal paypal;
 	
