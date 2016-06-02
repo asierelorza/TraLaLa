@@ -2,9 +2,12 @@ package gateway;
 
 import serviciosExternos.IBanco;
 
-public class GatewayBanco extends Gateway {
+public class GatewayBanco implements IGateway {
 	
-	public IBanco banco;
+	private IBanco banco;
+	
+	private String mensaje;
+	
 	
 	private static GatewayBanco instance;
 	
@@ -19,9 +22,9 @@ public class GatewayBanco extends Gateway {
 	@Override
 	public String efectuarPago(String numTarjeta, int importe) {
 		
-		String mensaje = banco.efectuarPago(Integer.parseInt(numTarjeta), importe);
+		this.mensaje = banco.efectuarPago(Integer.parseInt(numTarjeta), importe);
 		
-		return mensaje;
+		return this.mensaje;
 	}
 
 }

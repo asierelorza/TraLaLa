@@ -5,10 +5,11 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.persistence.InheritanceType;
 
 import strategy.PagoStrategy;
+import visitor.Visitable;
 
 @PersistenceCapable
 //@Inheritance(strategy=InheritanceStrategy.NEW_TABLE)
-public abstract class Pago {
+public abstract class Pago implements Visitable {
 
 	protected int pago; // El numero de pago, clave primaria
 	protected int importeMensual;
@@ -29,4 +30,16 @@ public abstract class Pago {
 	 public int getPago(){
 		 return this.pago;
 	 }
+
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	 
+	 
 }

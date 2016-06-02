@@ -1,8 +1,8 @@
 package factory;
 
-import gateway.Gateway;
 import gateway.GatewayBanco;
 import gateway.GatewayPayPal;
+import gateway.IGateway;
 
 public class FactoryGateways {
 	
@@ -16,7 +16,7 @@ private static FactoryGateways instance;
 		return instance;
 	}
 	
-	public Gateway crearGateway(String tipo){
+	public IGateway crearGateway(String tipo){
 		if(tipo.equals("PayPal")){ // Se le pasara por el CheckBox del GUI
 			
 			return new GatewayPayPal();

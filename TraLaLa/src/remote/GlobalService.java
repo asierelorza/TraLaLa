@@ -7,7 +7,7 @@ import data.Cancion;
 import data.Usuario;
 import dto.UsuarioFavDTO;
 
-public class GlobalService extends UnicastRemoteObject implements IGlobalService {
+public class GlobalService extends UnicastRemoteObject implements IGlobalService2 {
 	
 	private static final long serialVersionUID = 1L;
 	

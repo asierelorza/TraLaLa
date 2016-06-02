@@ -29,9 +29,7 @@ public class PagoVentajosoStrategy implements PagoStrategy {
 		}
 		
 		local = pago;
-		pago = usuario.getImporteMensual() + (local*(porcentaje/100));
-		
-		
+				
 		return pago;
 	}
 

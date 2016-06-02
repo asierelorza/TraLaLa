@@ -2,9 +2,10 @@ package gateway;
 
 import serviciosExternos.IPayPal;
 
-public class GatewayPayPal extends Gateway {
+public class GatewayPayPal implements IGateway {
 	
-	public IPayPal paypal;
+	private IPayPal paypal;
+	private String mensaje;
 	
 	private static GatewayPayPal instance;
 	
@@ -19,9 +20,9 @@ public class GatewayPayPal extends Gateway {
 	@Override
 	public String efectuarPago(String usuarioPayPal, int importe) {
 		
-		String mensaje = paypal.efectuarPago(usuarioPayPal, importe);
+		this.mensaje = paypal.efectuarPago(usuarioPayPal, importe);
 		
-		return mensaje;
+		return this.mensaje;
 	}
 
 }

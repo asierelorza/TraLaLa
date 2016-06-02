@@ -4,7 +4,7 @@ import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 
 import remote.GlobalService;
-import remote.IGlobalService;
+import remote.IGlobalService2;
 
 public class Main {
 	
@@ -16,7 +16,7 @@ public class Main {
 		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];		
 
 		try {
-			IGlobalService remoteFaçade = GlobalService.getInstance();
+			IGlobalService2 remoteFaçade = GlobalService.getInstance();
 
 			Naming.rebind(name, remoteFaçade);
 			System.out.println(" * Auction server '" + name + "' started!!");
