@@ -37,7 +37,7 @@ public class GlobalService extends UnicastRemoteObject implements IGlobalService
 	public boolean login(String nombreUsu, String usuPayPal, String contraPayPal, int numTarjCred, boolean ventajoso) {
 		
 		return UsuarioService.getInstance().registrarUsuario(nombreUsu, usuPayPal, contraPayPal, numTarjCred, ventajoso);
-		// Sera el ServiceLocator el que sacara el mensaje de si se ha registrado bien o no en funcion de esto
+		
 		
 	}
 

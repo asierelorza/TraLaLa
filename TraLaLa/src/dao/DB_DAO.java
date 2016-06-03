@@ -29,12 +29,12 @@ public class DB_DAO {
 	public boolean registrarUsuario(String nombreUsu, String usuPayPal, String contraPayPal, int numTarjCred, boolean ventajoso){	
 						
 		try {
-			System.out.println("- Store objects in the DB");			
-			//Get the Persistence Manager
+			System.out.println("- Registrando usuario");			
+			
 			pm = pmf.getPersistenceManager();
-			//Obtain the current transaction
+			
 			tx = pm.currentTransaction();		
-			//Start the transaction
+			
 			tx.begin();
 			
 			Usuario usuario = new Usuario(nombreUsu, usuPayPal, contraPayPal, numTarjCred, ventajoso);
@@ -43,13 +43,13 @@ public class DB_DAO {
 			
 			
 			
-			//End the transaction
+			
 			tx.commit();
 			
 			return true;
 
 		} catch (Exception ex) {
-			System.err.println(" $ Error storing objects in the DB: " + ex.getMessage());
+			System.err.println(" $ Error a la hora de registrar usuario: " + ex.getMessage());
 			ex.printStackTrace();
 			
 			return false;
@@ -71,22 +71,22 @@ public class DB_DAO {
 		
 		try {
 			System.out.println("Modificar valor usuario 1 ...");			
-			//Get the Persistence Manager
+			
 			pm = pmf.getPersistenceManager();
-			//Obtain the current transaction
+			
 			tx = pm.currentTransaction();		
-			//Start the transaction
+			
 			tx.begin();
 			
 			Usuario bat = pm.getObjectById(Usuario.class, usuario.getNombreUsu());
 			bat = new Usuario(usuario);
 
 
-			//End the transaction
+			
 			tx.commit();
 			
 		} catch (Exception ex) {
-			System.err.println(" $ Error retrieving accounts using a 'Query': " + ex.getMessage());
+			System.err.println(" $ Error modificando usuario: " + ex.getMessage());
 		} finally {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
@@ -105,9 +105,9 @@ public class DB_DAO {
 		try{
 			
 			pm = pmf.getPersistenceManager();
-			//Obtain the current transaction
+			
 			tx = pm.currentTransaction();		
-			//Start the transaction
+			
 			tx.begin();
 
 			Cancion kantu = pm.getObjectById(Cancion.class, cancion.getId_cancion());
